@@ -1,5 +1,6 @@
 ﻿using ServiceBehavior.Abstractions;
-using ServiceBehavior.Abstractions.Constants;
+using ServiceBehavior.Behaviors;
+using ServiceBehavior.Constants;
 using System;
 
 namespace ServiceBehavior.ViewModels

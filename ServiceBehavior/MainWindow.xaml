@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:ServiceBehavior"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:beh="clr-namespace:ServiceBehavior.Behaviors"
-        xmlns:const="clr-namespace:ServiceBehavior.Abstractions.Constants;assembly=ServiceBehavior.Abstractions"
+        xmlns:const="clr-namespace:ServiceBehavior.Constants"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <i:Interaction.Behaviors>
-            <beh:GridBehavior />
-            <beh:GridBehavior Key="{x:Static const:ServiceKeyConstants.BackgroundColorService}" />
+            <beh:BackgroundColorBehavior />
+            <beh:BackgroundColorBehavior Key="{x:Static const:ServiceKeyConstants.BackgroundColorService}" />
         </i:Interaction.Behaviors>
 
         <Grid.RowDefinitions>

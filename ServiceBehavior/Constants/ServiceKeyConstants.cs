@@ -1,4 +1,4 @@
-﻿namespace ServiceBehavior.Abstractions.Constants
+﻿namespace ServiceBehavior.Constants
 {
     public static class ServiceKeyConstants
     {

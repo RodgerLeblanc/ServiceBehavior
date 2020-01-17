@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 namespace ServiceBehavior.Behaviors
 {
-    public class GridBehavior : ServiceBehavior<Grid>, IBackgroundColorService
+    public class BackgroundColorBehavior : ServiceBehavior<Grid>, IBackgroundColorService
     {
         protected override void OnAttached()
         {

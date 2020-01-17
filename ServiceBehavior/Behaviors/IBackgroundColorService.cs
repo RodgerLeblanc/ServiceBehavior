@@ -1,4 +1,6 @@
-﻿namespace ServiceBehavior.Abstractions
+﻿using ServiceBehavior.Abstractions;
+
+namespace ServiceBehavior.Behaviors
 {
     public interface IBackgroundColorService : IServiceBehavior
     {
