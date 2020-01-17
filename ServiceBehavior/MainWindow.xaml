@@ -1,0 +1,34 @@
+﻿<Window x:Class="ServiceBehavior.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceBehavior"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:beh="clr-namespace:ServiceBehavior.Behaviors"
+        xmlns:const="clr-namespace:ServiceBehavior.Abstractions.Constants;assembly=ServiceBehavior.Abstractions"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <i:Interaction.Behaviors>
+            <beh:GridBehavior />
+            <beh:GridBehavior Key="{x:Static const:ServiceKeyConstants.BackgroundColorService}" />
+        </i:Interaction.Behaviors>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button Content="Change background using behavior" 
+                Command="{Binding SubViewModel.ChangeBackgroundCommand}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" />
+
+        <Button Grid.Row="1" 
+                Content="Change background using behavior with key" 
+                Command="{Binding SubViewModel.ChangeBackgroundWithKeyCommand}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" />
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBehavior", "ServiceBehavior\ServiceBehavior.csproj", "{86C4A05D-342A-46E7-8D33-26211AEF52AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBehavior.Abstractions", "ServiceBehavior.Abstractions\ServiceBehavior.Abstractions.csproj", "{E991A7E5-5D87-4B54-9B08-23E040AB73C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86C4A05D-342A-46E7-8D33-26211AEF52AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C4A05D-342A-46E7-8D33-26211AEF52AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C4A05D-342A-46E7-8D33-26211AEF52AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C4A05D-342A-46E7-8D33-26211AEF52AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E991A7E5-5D87-4B54-9B08-23E040AB73C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E991A7E5-5D87-4B54-9B08-23E040AB73C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E991A7E5-5D87-4B54-9B08-23E040AB73C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E991A7E5-5D87-4B54-9B08-23E040AB73C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0984701C-7B77-4742-A26F-CF81C96F5A63}
+	EndGlobalSection
+EndGlobal
