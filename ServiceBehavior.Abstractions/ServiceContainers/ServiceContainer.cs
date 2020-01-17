@@ -7,24 +7,19 @@ namespace ServiceBehavior.Abstractions
 {
     public class ServiceContainer : IServiceContainer
     {
-        private static readonly Assembly _assembly;
         private IDictionary<string, object> _dictionary = new Dictionary<string, object>();
-
-        static ServiceContainer()
-        {
-            _assembly = typeof(ServiceContainer).Assembly;
-        }
 
         public void RegisterService(object service)
         {
             string key = service.GetType().GetInterfaces()
-                .Where(t => t.Assembly == _assembly)
+                .OfType<TypeInfo>()
+                .Where(t => t.ImplementedInterfaces.Contains(typeof(IServiceBehavior)))
                 .Select(t => GetKey(t))
                 .FirstOrDefault();
 
             if (string.IsNullOrEmpty(key))
             {
-                throw new InvalidOperationException("The service must register its own interface.");
+                throw new InvalidOperationException($"Could not find an interface that implements IServiceBehavior in {service.GetType()}.");
             }
 
             RegisterService(key, service);
