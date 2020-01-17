@@ -62,7 +62,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Behaviors\IBackgroundColorService.cs" />
-    <Compile Include="Behaviors\ServiceBehavior.cs" />
     <Compile Include="Constants\ServiceKeyConstants.cs" />
     <Compile Include="ViewModels\SubViewModel.cs" />
     <Compile Include="WPFCommand.cs" />
@@ -111,7 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceBehavior.Abstractions\ServiceBehavior.Abstractions.csproj">
-      <Project>{e991a7e5-5d87-4b54-9b08-23e040ab73c2}</Project>
+      <Project>{7e7b0093-cd01-40b2-831f-8a965966d4f5}</Project>
       <Name>ServiceBehavior.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>

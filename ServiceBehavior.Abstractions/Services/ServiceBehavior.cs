@@ -1,8 +1,7 @@
-﻿using ServiceBehavior.Abstractions;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Interactivity;
 
-namespace ServiceBehavior.Behaviors
+namespace ServiceBehavior.Abstractions
 {
     public abstract class ServiceBehavior<T> : Behavior<T>
         where T : FrameworkElement
